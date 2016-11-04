@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="static/js/mui.js"></script>
+    <link href="static/css/mui.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+    
+    <style type="text/css">
+    	.dc_nav{
+    		border: 1px solid #e8e8e8;
+    		list-style: none;
+    		padding: 5px;
+    		margin: 2px 0 2px 2px;
+    	}
+    	.dc_nav:hover{
+    		background: #e8e8e8;
+    	}
+    </style>
+</head>
+<body>
+
+<div id="app">
+	<!--<nav-bar></nav-bar>-->
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">singcms</h1>
+	</header>
+	<router-view></router-view>
+	
+	<nav class="mui-bar mui-bar-tab">
+			<a class="dc_nav mui-active" href="/">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+		
+			<a class="dc_nav"  href="#/tiyu">
+				<span class="mui-icon mui-icon-email"><span class="mui-badge">9</span></span>
+				<span class="mui-tab-label">体育</span>
+			</a>
+			<a class="dc_nav" href="#/xinwen">
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">新闻</span>
+			</a>
+			<a class="dc_nav" href="#/keji">
+				<span class="mui-icon mui-icon-gear"></span>
+				<span class="mui-tab-label">科技</span>
+			</a>
+		</nav>
+</div>
+	
+	
+</body>
+</html>

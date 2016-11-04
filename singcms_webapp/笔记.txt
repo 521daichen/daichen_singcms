@@ -1,0 +1,11 @@
+在build 下的 webpack.dev.conf.js里引入了
+
+ //引入zepto 全局
+    new webpack.ProvidePlugin({
+        $: 'webpack-zepto',
+    })
+    
+全局引入
+
+安装：npm install webpack-zepto@版本号
+
